@@ -1,0 +1,89 @@
+body {
+    text-align: center;
+    background: linear-gradient(rgba(132, 0, 255, 0.717), rgb(33, 0, 110)) !important;
+}
+
+p {
+    display: contents;
+    color: white;
+}
+
+.div-img {
+    text-align: center;
+
+}
+
+img {
+    border-radius: 100%;
+    width: 120px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+/* Buttons */
+
+.row {
+    margin: 1rem;
+}
+
+.col {
+    text-align: center;
+}
+
+text {
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+a {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Buttons */
+
+button {
+    width: 60%;
+    height: 60px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.button {
+    border-radius: none;
+    border-style: solid;
+    border-color: whitesmoke;
+    border-width: 4px;
+}
+
+.button:hover {
+    background-color: #0F446E;
+    border-color: #10456E;
+}
+
+input[type="button"] {
+    outline: none;
+}
+
+button:active {
+    outline: none;
+}
+
+input[type="button"]::-moz-focus-inner {
+    border: 0;
+}
+
+button:focus {
+    outline: 0;
+}
+
+/* Icons */
+.fab,
+.far,
+.fas {
+    margin-left: 2px;
+    margin-right: 5px;
+    color: white;
+}

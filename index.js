@@ -8,31 +8,24 @@ if (navigator.appVersion.indexOf("android") != -1) OSName = "android";
 
 
 
-OS();
-
-
-function OS() {
-    console.log(OSName);
-}
 
 
 $(".fbButton").click(function () {
 
     switch (OSName) {
         case 'iOS':
-            $('.facebookAnchor').prop("href", "fb://page/106531041160550");
+            // $('.facebookAnchor').prop("href", "fb://page/106531041160550");
             window.location.href = 'fb://page/106531041160550';
 
             break;
 
         case 'MacOS':
-            $('.facebookAnchor').prop("href", "https://www.facebook.com/thelegalnotice");
+            // $('.facebookAnchor').prop("href", "https://www.facebook.com/thelegalnotice");
             window.location.href = 'https://www.facebook.com/thelegalnotice';
             break;
 
         case 'android':
-            $('.facebookAnchor').prop("href", "fb://page/106531041160550");
-            window.location.href = 'fb://facewebmodal/f?href=https://www.facebook.com/thelegalnotice';
+            window.location.href = 'fb://facewebmodal/f?href=https://www.facebook.com/106531041160550';
             break;
 
         default:

@@ -11,7 +11,7 @@ if (navigator.appVersion.indexOf("Mac") != -1) OSName = "MacOS";
 if (navigator.appVersion.indexOf("X11") != -1) OSName = "UNIX";
 if (navigator.appVersion.indexOf("Linux") != -1) OSName = "Linux";
 if (navigator.appVersion.indexOf("iOS") != -1) OSName = "iOS";
-if (navigator.appVersion.indexOf("android") != -1) OSName = "android";
+if (navigator.appVersion.indexOf("Android") != -1) OSName = "Android";
 
 
 
@@ -26,9 +26,8 @@ $(".fbButton").click(function () {
             break;
 
 
-        case 'android':
-            $(p).css("background-color:red;");
-            // window.location.href = 'fb://facewebmodal/' + FACEBOOK_PAGE_ID;
+        case 'Android':
+            window.location.href = 'fb://facewebmodal/' + FACEBOOK_PAGE_ID;
             break;
 
         default:

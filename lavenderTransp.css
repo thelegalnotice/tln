@@ -5,7 +5,7 @@ body {
 
 p {
     display: contents;
-    color: black;
+    color: white;
 }
 
 .div-img {
@@ -48,7 +48,7 @@ button {
     width: 60%;
     height: 60px;
     text-align: center;
-    background-color: transparent;
+    background-color: #062354;
 }
 
 .button {
@@ -85,11 +85,5 @@ button:focus {
 .fas {
     margin-left: 2px;
     margin-right: 5px;
-    color: black;
+    color: white;
 }
-
-
-
-/* background: button: .button:hover */
-lavender,
-azure,

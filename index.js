@@ -13,7 +13,6 @@ document.write('Your OS: ' + OSName);
 OS();
 
 
-
 function OS() {
     console.log(OSName);
 }
@@ -33,6 +32,13 @@ $(".fbButton").click(function () {
             window.location.href = 'https://www.facebook.com/thelegalnotice';
             break;
 
-    }
+        case 'android':
+            $('.facebookAnchor').prop("href", "fb://page/106531041160550");
+            window.location.href = 'fb://page/106531041160550';
+            break;
 
+        default:
+            window.location.href = 'https://www.facebook.com/thelegalnotice';
+            break;
+    }
 });

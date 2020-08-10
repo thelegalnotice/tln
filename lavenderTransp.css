@@ -52,7 +52,7 @@ button {
 }
 
 .button {
-    border-radius: 60px;
+    border-radius: 2px;
     border-style: solid;
     border-color: #11466F;
     border-width: 4px;

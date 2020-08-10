@@ -13,7 +13,7 @@ if (navigator.appVersion.indexOf("Linux") != -1) OSName = "Linux";
 if (navigator.appVersion.indexOf("iOS") != -1) OSName = "iOS";
 if (navigator.appVersion.indexOf("Android") != -1) OSName = "Android";
 
-
+document.write('Your OS: ' + OSName);
 
 
 
@@ -27,7 +27,7 @@ $(".fbButton").click(function () {
 
 
         case 'Android':
-            window.location.href = 'fb://facewebmodal/' + FACEBOOK_PAGE_ID;
+            window.location.href = 'fb://page/' + FACEBOOK_PAGE_ID;
             break;
 
         default:

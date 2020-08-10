@@ -8,8 +8,6 @@ if (navigator.appVersion.indexOf("android") != -1) OSName = "android";
 
 
 
-document.write('Your OS: ' + OSName);
-
 OS();
 
 
@@ -34,7 +32,7 @@ $(".fbButton").click(function () {
 
         case 'android':
             $('.facebookAnchor').prop("href", "fb://page/106531041160550");
-            window.location.href = 'fb://page/106531041160550';
+            window.location.href = 'fb://facewebmodal/f?href=https://www.facebook.com/thelegalnotice';
             break;
 
         default:

@@ -27,7 +27,7 @@ $(".fbButton").click(function () {
 
 
         case 'android':
-            document.write("Blaha");
+            $(p).css("background-color:red;");
             // window.location.href = 'fb://facewebmodal/' + FACEBOOK_PAGE_ID;
             break;
 

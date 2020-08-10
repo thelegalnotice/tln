@@ -1,3 +1,10 @@
+//fb URLs
+const FACEBOOK_URL = "https://www.facebook.com/thelegalnotice";
+const FACEBOOK_PAGE_ID = "106531041160550";
+
+
+
+
 var OSName = "Unknown OS";
 if (navigator.appVersion.indexOf("Win") != -1) OSName = "Windows";
 if (navigator.appVersion.indexOf("Mac") != -1) OSName = "MacOS";
@@ -15,21 +22,18 @@ $(".fbButton").click(function () {
     switch (OSName) {
         case 'iOS':
             // $('.facebookAnchor').prop("href", "fb://page/106531041160550");
-            window.location.href = 'fb://page/106531041160550';
-
+            window.location.href = 'fb://page/' + FACEBOOK_PAGE_ID;
             break;
 
-        case 'MacOS':
-            // $('.facebookAnchor').prop("href", "https://www.facebook.com/thelegalnotice");
-            window.location.href = 'https://www.facebook.com/thelegalnotice';
-            break;
 
         case 'android':
-            window.location.href = 'fb://facewebmodal/f?href=https://www.facebook.com/106531041160550';
+            window.location.href = 'fb://page/' + FACEBOOK_PAGE_ID;
+
+
             break;
 
         default:
-            window.location.href = 'https://www.facebook.com/thelegalnotice';
+            window.location.href = FACEBOOK_URL;
             break;
     }
 });

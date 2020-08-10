@@ -27,8 +27,11 @@ $(".fbButton").click(function () {
 
 
         case 'android':
-            window.location.href = 'fb://page/' + FACEBOOK_PAGE_ID;
-
+            // window.location.href = 'fb://page/' + FACEBOOK_PAGE_ID;
+            setTimeout(function () {
+                window.location.href = "https://www.facebook.com/" + FACEBOOK_PAGE_ID;
+            }, 25);
+            window.location = "fb://";
 
             break;
 

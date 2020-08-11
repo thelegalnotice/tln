@@ -13,22 +13,27 @@ if (navigator.appVersion.indexOf("Android") != -1) OSName = "Android";
 
 document.write('Your OS: ' + OSName);
 
+function isFacebookApp() {
+    var ua = navigator.userAgent || navigator.vendor || window.opera;
+    console.log(ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1);
+    return (ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1);
+}
+
 $(".fbButton").click(function () {
 
     switch (OSName) {
         case 'iOS':
-            window.location.href = 'fb://page/' + FACEBOOK_PAGE_ID;
+            if (isFacebookApp()) {
+                window.location.href = 'fb://page/' + FACEBOOK_PAGE_ID;
+            } else {
+                window.location.href = FACEBOOK_URL;
+
+            }
             break;
 
         case 'Android':
 
-            try {
-                window.location.href = 'fb://page/' + FACEBOOK_PAGE_ID;
-            } catch (error) {
-                console.error(error);
-                window.location.href = FACEBOOK_URL;
-            }
-
+            window.location.href = 'fb://page/' + FACEBOOK_PAGE_ID;
             break;
 
         default:

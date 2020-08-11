@@ -27,13 +27,17 @@ $(".fbButton").click(function () {
                 window.location.href = 'fb://page/' + FACEBOOK_PAGE_ID;
             } else {
                 window.location.href = FACEBOOK_URL;
-
             }
             break;
 
         case 'Android':
 
-            window.location.href = 'fb://page/' + FACEBOOK_PAGE_ID;
+            if (navigator.userAgent.match(/(iPod|iPhone|iPad)/) && navigator.userAgent.match(/FBAV/i)) {
+                window.location.href = 'fb://page/' + FACEBOOK_PAGE_ID;
+            } else {
+                window.location.href = 'fb://page/' + FACEBOOK_PAGE_ID;
+            }
+
             break;
 
         default:
@@ -41,3 +45,10 @@ $(".fbButton").click(function () {
             break;
     }
 });
+
+
+
+
+// This works fine for me in JavaScript:
+
+// 

@@ -11,32 +11,23 @@ if (navigator.appVersion.indexOf("Linux") != -1) OSName = "Linux";
 if (navigator.appVersion.indexOf("iOS") != -1) OSName = "iOS";
 if (navigator.appVersion.indexOf("Android") != -1) OSName = "Android";
 
-document.write('Your OS: ' + OSName);
-
-function isFacebookApp() {
-    var ua = navigator.userAgent || navigator.vendor || window.opera;
-    console.log(ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1);
-    return (ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1);
-}
+// document.write('Your OS: ' + OSName);
 
 $(".fbButton").click(function () {
-
     switch (OSName) {
         case 'iOS':
-            if (isFacebookApp()) {
-                window.location.href = 'fb://page/' + FACEBOOK_PAGE_ID;
-            } else {
-                window.location.href = FACEBOOK_URL;
-            }
+            window.location.href = 'fb://page/' + FACEBOOK_PAGE_ID;
             break;
 
         case 'Android':
+            window.location.href = 'fb://page/' + FACEBOOK_PAGE_ID;
 
-            if (navigator.userAgent.match(/(iPod|iPhone|iPad)/) && navigator.userAgent.match(/FBAV/i)) {
-                window.location.href = 'fb://page/' + FACEBOOK_PAGE_ID;
-            } else {
-                window.location.href = 'fb://page/' + FACEBOOK_PAGE_ID;
-            }
+            // try {
+            //     window.location.href = 'fb://page/' + FACEBOOK_PAGE_ID;
+            // } catch (error) {
+            //     console.error(error);
+            //     window.location.href = FACEBOOK_URL;
+            // }
 
             break;
 
@@ -45,10 +36,3 @@ $(".fbButton").click(function () {
             break;
     }
 });
-
-
-
-
-// This works fine for me in JavaScript:
-
-// 

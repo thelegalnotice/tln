@@ -5,7 +5,7 @@ body {
 
 p {
     display: contents;
-    color: whitesmoke;
+    color: linear-gradient(to bottom left, #6699ff 0%, #6699ff 100%);
 }
 
 .div-img {
